@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #a1b1a1;
+    font-family: sans-serif;
+  }
+
+  
+  /*menu----------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: #85af9a;
+}
+
+.logo i {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.menu {
+    ul li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 1rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px 1px #245736;
+        }
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+    } 
+}
+
+ input[type=text] {
+    padding: 2px;
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+  }
+  
+  .search button {
+    float: right;
+    padding: 1px 5px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #85af9a;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /*main----------------*/
+.main-content {
+    margin: 0px 2% 5rem 2%;
+    box-shadow: 1px 2px 1px #4f9982;
+    text-align: center;
+
+    img {
+        height: 25rem;
+        width: 28rem;
+    }
+
+    .image2 {
+        display: none;
+    }
+}
+
+.container1, .container2 {
+    display: flex;
+    align-items: center;
+}
+.container1 {
+    
+    h3, h6, p {
+    color: white;
+    }
+    h3 {
+        font-size: 2rem;
+        text-shadow: 1px 2px 1px #669999;
+    }
+}
+.container2 {
+    background: rgb(236, 233, 233);
+
+    h3 {
+        font-size: 2rem;
+        text-shadow: 1px 2px 1px #669999;
+    }
+    h3, p {
+        color: #7e857e;
+    }
+}
+
+.img2 {
+    order:2;
+}
+
+.text-area {
+    margin: 0 auto;
+    width: 40%;
+}
+
+// -------------top---------------------------
+//   media queries------------
+@media screen and (max-width: 414px) {
+    header {
+        display: flex;
+        justify-content: left;
+        padding: 1px 1px;
+        align-items: center;
+
+    }
+    
+    .menu {
+         float: right;
+    }
+    .menu ul li {
+        display: block;
+    }
+    .logo  {
+        float: left;
+    }
+
+    .search {
+        display: none;
+    }
+}
+@media screen and (max-width: 666px) {
+    header {
+        display: flex;
+        justify-content: left;
+        padding: 1px 1px;
+        align-items: center;
+
+    }
+    
+    .menu {
+         float: right;
+    }
+    .menu ul li {
+        display: block;
+    }
+    .logo  {
+        float: left;
+    }
+
+    .search {
+        margin-left: 20%;
+    }
+}
+// -------------main---------------------
+
+@media screen and (max-width: 414px) {
+    .container1, 
+    .container2 {
+        // flex-wrap: wrap;
+        // justify-content: left;
+        
+        h3 {
+            font-size: .6rem; 
+            text-align: center;    
+        }
+    }
+
+    .main-content {
+        // margin: 0px 0px 5rem 0px;
+    
+        img {
+            height: 90%!important;
+            width: 100%!important;  
+        }
+    }
+    .text-area {
+        margin: 0 2%;
+        width: 30%;
+        // text-align: left;
+    }
+}
+
+// ====================2
+@media screen and (max-width: 563px) {
+
+    .container1, 
+    .container2 {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        h3 { 
+            font-size: 1.3rem;
+        }
+    }  
+
+    .text-area {
+            margin: 0 2%;
+            width: 90%;
+            text-align: center;
+        }
+        img {
+            height: 90%!important;
+            width: 90%!important;    
+        }
+        .image1 {
+            display: none;
+        }
+        .image2 {
+            display: inline-block!important;
+            
+        }
+        .img1 {
+           order:2; 
+        }
+
+        h6 {
+            display: none;
+        }
+}
+
+// =================3
+@media screen and (max-width: 638px) {
+    .container1 p,
+    .container2 p{
+            margin-bottom: 3rem; 
+            margin-left: 1%;
+    }
+}
+
+// ===================4
+@media screen and (max-width: 768px) {
+    .main-content {
+        img {
+            height: 19rem;
+            width: 20rem;    
+        }
+    }
+    .container1 p,
+    .container2 p{
+        margin-bottom: 2rem; 
+    }
+}
+
+
